@@ -1,0 +1,91 @@
+.user-bg-holder{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-image: url("https://cdn.wallpapersafari.com/13/35/NbMw8f.jpg");
+    background-size: cover;
+   
+}
+.profile-card-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.profile-card{
+    height: 18rem;
+    width: 18rem;
+    background-color: transparent;
+    border: none;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-picture{
+    font-size: 7rem;
+    color: #529ece;
+    margin: 1.5rem;
+}
+.explore-btn{
+    height: 2.6rem;
+    min-width: 4rem;
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    color: #529ece;
+    border: 2px solid #529ece;
+    border-radius: 0.4rem;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+}
+.explore-btn:hover{
+    font-weight: bold;
+    box-shadow: 3px 3px 3px 3px #529ece;
+}
+.greeting{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #529ece;
+    text-align: center;
+}
+
+.user-text{
+    font-size: 1.2rem;
+    font-family: "Roboto";
+    color: #000000;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px){
+    .profile-card{
+        height: 15rem;
+        width: 14rem;
+    }
+    .greeting{
+        font-size: 1.4rem;
+    }
+    .explore-btn{
+        height: 2rem;
+        min-width: 4rem;
+        
+    }
+    .user-text{
+        font-size: 1rem;
+    }
+    .user-picture{
+        height: 5rem;
+        width: 5rem;
+        margin: 0.7rem;
+    }
+}
+

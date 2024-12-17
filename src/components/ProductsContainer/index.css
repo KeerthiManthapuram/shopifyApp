@@ -1,0 +1,228 @@
+ .products-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 1.5rem;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 21rem;
+    width: 23%;
+    border: 2px solid rgba(240, 248, 255, 0.985);
+    border-radius: 0.3rem;
+    margin: 0.4rem;
+    padding: 5px;
+    background-color: rgba(240, 248, 255, 0.985);
+}
+
+.product-card:hover{
+    border: 2px solid rgba(188, 215, 238, 0.985);
+}
+
+.product-home-img-container{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.products-images{
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 4px;
+}
+
+
+.product-text-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 6rem;
+    width: 100%;
+}
+
+.product-name{
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #1894c5;
+    margin-bottom: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+.price{
+    font-family: "Roboto";
+    font-size: 0.7rem;
+    color: #a29e9e;
+    font-weight: 500;
+    margin-top: 0.2rem;
+    overflow: hidden;
+}
+.cart-holder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.count{
+    font-family: "Roboto";
+    margin: 2px;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.no-search-result-view{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    position: sticky;
+}
+.no-results-image{
+    height: 70%;
+    width: 44%;
+}
+.no-search-items-text{
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    color: #158edf;
+    margin-top: 0;
+    width: 80%;
+    text-align: center;
+}
+@media screen and (max-width: 991px){
+    .product-card{
+        height: 15rem;
+        width: 30%;
+        margin: 0.6rem;
+        padding: 5px;
+    }
+    .product-home-img-container{
+        height: 80%;
+        width: 63%;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    .product-card{
+        height: 15rem;
+        width: 42%;
+        margin: 0.6rem;
+        padding: 5px;
+    }
+    .product-home-img-container{
+        height: 80%;
+        width: 60%;
+    }
+    
+    .product-text-holder{
+        margin: 5px;
+    }
+    .product-name{
+        font-size: 0.7rem;
+    }
+    .price{
+        font-size: 0.6rem;
+    }
+    
+    .no-results-image{
+        height: 65%;
+        width: 40%;
+    }
+    .no-search-items-text{
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        margin-top: 0;
+        width: 85%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .product-card{
+        height: 16rem;
+        width: 46;
+        padding: 4px;
+    }
+    
+    .no-results-image{
+        height: 60%;
+        width: 60%;
+    }
+    .no-search-items-text{
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        margin-top: 0;
+        width: 86%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .product-card{
+        height: 13rem;
+        width: 20rem;
+    }
+    
+    .product-home-img-container{
+        height: 10rem;
+        width: 8rem;
+        
+    }
+
+    .product-name{
+        font-size: 0.8rem;
+    }
+    .price{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .product-card{
+        min-height: 10rem;
+        width: 90%;
+        align-self: center;
+        padding: 3px;
+    }
+    .product-home-img-container{
+        height: 12rem;
+        width: 9rem;
+    }
+    .products-images{
+        height: 100%;
+        width: 100%;
+    }
+    .product-text-holder{
+        width: 90%;
+    }
+    .no-results-image{
+        height: 60%;
+        width: 75%;
+    }
+    .no-search-items-text{
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        margin-top: 0;
+        width: 89%;
+        text-align: center;
+    }
+}

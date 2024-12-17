@@ -1,0 +1,53 @@
+.error-bg-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+.error-picture{
+    height: 70%;
+    width: 42%;
+}
+.error-text{
+    font-family: "Roboto";
+    font-size: 1.3rem;
+    color: #0997ac;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+@media screen and (max-width: 991px){
+    .error-picture{
+        height: 65%;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px){
+    .error-picture{
+        height: 65%;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 575px){
+    .error-picture{
+        height: 72%;
+        width: 80%;
+    }
+    .error-text{
+        font-family: "Roboto";
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .error-picture{
+        height: 70%;
+        width: 85%;
+    }
+}
+@media screen and (max-width: 350px){
+    .error-picture{
+        height: 70%;
+        width: 87%;
+    }
+}
